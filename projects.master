@@ -1,0 +1,153 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="projects.master.cs" Inherits="projects" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="mainpage.css" type="text/css" rel="stylesheet" />
+    <link href="cal.css" type="text/css" rel="stylesheet" />
+    <script language="javascript" src="JScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center">
+      <tr>
+    <td align="center" style="width: 950px" >
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/header.jpg" 
+            Width="1154px" />
+    </td>
+    </tr>
+       
+    </table>
+   
+     <tr align="left">
+     <td style="width: 438px">
+     <table>
+     <tr>
+     <td valign="top">
+     <fieldset style="color:Gray">
+     <legend style="font-family:Bookman Old Style; font-weight:bold">
+     MENU
+     </legend>
+     
+     <table>
+      <tr>
+     <td>
+         <asp:Label ID="lblwel" runat="server" Text="Welcome" Font-Bold="True" ForeColor="#004000" Font-Names="Cambria"></asp:Label>
+         <asp:Label ID="lblcompname" runat="server" Font-Bold="True" ForeColor="White" Font-Names="Cambria" Font-Size="Larger"></asp:Label>
+     </td>
+     </tr>
+     <tr>
+     <td>
+     </td>
+     </tr>
+     <tr>
+     <td style="height: 22px">
+         <asp:LinkButton ID="lnkcreateproj" runat="server" Text="CREATE PROJECT" 
+             OnClick="lnkcreateproj_Click" Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033" ></asp:LinkButton>
+     </td>
+     </tr>
+     
+     <tr>
+     <td>
+     </td>
+     </tr>
+     <tr>
+     <td style="height: 23px">
+         <asp:LinkButton ID="lnkprojsch" runat="server" Text="PROJECT SCHEDULE" 
+             OnClick="lnkprojsch_Click" Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033" ></asp:LinkButton>
+     </td>
+     </tr>
+     <tr>
+     <td>
+     </td>
+     </tr>
+     <tr>
+     <td>
+         <asp:LinkButton ID="lnkprojstatus" runat="server" Text="CHECK STATUS" 
+             OnClick="lnkprojstatus_Click" Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033"></asp:LinkButton>
+     </td>
+     </tr>
+     
+     <tr>
+     <td>
+     </td>
+     </tr>
+     <tr>
+     <td>
+         <asp:LinkButton ID="lnkprojwork" runat="server" Text="WORK ASSIGN" 
+             OnClick="lnkprojwork_Click" Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033"></asp:LinkButton>
+     </td>
+     </tr>
+     <tr>
+     <td>
+     </td>
+     </tr>
+     <tr>
+     <td style="height: 21px">
+         <asp:LinkButton ID="lnkprojworkstatus" runat="server" Text="WORK STATUS" 
+             OnClick="lnkprojworkstatus_Click" Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033"></asp:LinkButton>
+     </td>
+     </tr>
+    
+      <tr>
+     <td>
+     </td>
+     </tr>
+     </tr>
+      <tr>
+     <td>
+     <asp:LinkButton ID="lnkchartview" runat="server" Text="CHART VIEW" 
+            Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033" onclick="lnkchartview_Click"></asp:LinkButton>
+     </td>
+     </tr>
+     <tr>
+     <td>
+     
+     </td>
+     </tr>
+     <tr>
+     <td style="height: 25px">
+         <asp:LinkButton ID="lnklog" runat="server" Text="LOG OUT" 
+             OnClick="lnklog_Click" Font-Bold="True" Font-Names="Cambria" 
+             ForeColor="#660033" ></asp:LinkButton>
+     </td>
+     </tr>
+    
+     </table>
+     </fieldset>
+     </td>
+     <td valign="top">
+      <div>
+     <table>
+     <tr>
+     <td>
+      <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+     </td>
+     </tr>
+     </table>
+     </div>
+     </td>
+    </tr>
+    
+     
+      </table>
+      
+      
+      
+      
+     </td>
+     </tr>
+    
+    
+    </form>
+</body>
+</html>
